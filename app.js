@@ -988,11 +988,11 @@ setInterval(function () {
 		if (player.joinKickTimeout > 0) {
 			player.joinKickTimeout--;
 		}
-		if (player.joinKickTimeout == 0 || player.afkKickTimeout <= 0) {
-			delete PLAYER_LIST[player.id];
-			disconnectSocket(player.id);
-			console.log(colors.red("[jsShooter] Kicked " + player.id + " for inactivity"));
-		}
+		// if (player.joinKickTimeout == 0 || player.afkKickTimeout <= 0) {
+		// 	delete PLAYER_LIST[player.id];
+		// 	disconnectSocket(player.id);
+		// 	console.log(colors.red("[jsShooter] Kicked " + player.id + " for inactivity"));
+		// }
 	}
 }, 100);
 
